@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Community,Garden">
+    <meta name="description" content="Kumangka Community Garden">
+    <meta name="author" content="Xiaodan Cao">
+    <title>Kumangka Community Garden</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/behavior.js"></script>
+  </head>
+  <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v22.0"></script>
+    <header>
+      <div class="right">
+        <div class="fb-share-button" data-href="http://15.236.211.133/about.html" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.\
+com/sharer/sharer.php?u=http%3A%2F%2F15.236.211.133%2Fabout.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://pla\
+tform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <ul>
+        <li class="logo">
+          <img src="images/logo.png" alt="logo" class="logo_img">
+          </li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="events.html">Events</a>
+          </li>
+          <li>
+            <a href="tweets.html">Tweets</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+    </header>
+    <main>
+      <article>
+        <h4 class="contact">Feel free to use the form or drop us an email.<br>Old fashioned phone calls works too.</h4>
+        <br>
+        <p>Phone: 08 - 9999 9999</p>
+        <br>
+        <p>Email: admin@kumangkagarden.com.au</p>
+        <br>
+        <p>Address: 28 Commercial Street West, Mount Gambier SA 5290 </p>
+        <br>
+        <div class="form-container">
+          <h2 class="contact-us">Contact Us</h2>
+          <form id="contactForm" onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="name" class="required">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <span id="nameError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="required">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email">
+              <span id="emailError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Your Phone (optional)">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Your Message"></textarea>
+            </div>
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
+      </article>
+      <aside>
+        <div id="disqus_thread"></div>
+        <script>
+          var disqus_config = function () {
+          this.page.url = 'http://15.236.211.133/contact.html';
+          this.page.identifier = 'contact';
+          };
+
+          (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://community-garden.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </aside>
+    </main>
+    <footer>
+      <p>Made by Xiaodan Cao</p>
+    </footer>
+    <script id="dsq-count-scr" src="//community-garden.disqus.com/count.js" async></script>
+  </body>
+</html>
+
+
